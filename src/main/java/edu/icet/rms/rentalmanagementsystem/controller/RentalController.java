@@ -1,6 +1,7 @@
 package edu.icet.rms.rentalmanagementsystem.controller;
 
 import edu.icet.rms.rentalmanagementsystem.dto.Rental;
+import edu.icet.rms.rentalmanagementsystem.service.RentalDetailsService;
 import edu.icet.rms.rentalmanagementsystem.service.RentalService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
@@ -14,6 +15,8 @@ import java.util.List;
 public class RentalController {
 
     private final RentalService rentalService;
+
+    private final RentalDetailsService rentalDetailsService;
 
     @PostMapping("/save")
     void persist(@RequestBody Rental rental) {

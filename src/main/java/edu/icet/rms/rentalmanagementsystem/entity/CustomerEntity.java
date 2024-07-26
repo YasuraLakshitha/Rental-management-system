@@ -10,6 +10,8 @@ public class CustomerEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long customerId;
+    private String customerName;
+    private String customerEmail;
     private String username;
     private String password;
 }
