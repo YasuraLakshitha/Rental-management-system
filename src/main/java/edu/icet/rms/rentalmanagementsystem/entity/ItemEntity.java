@@ -13,5 +13,5 @@ public class ItemEntity {
     private String itemName;
     private Double rentPerDay;
     private Double finePerDay;
-    private Boolean availability;
+    private String availability;
 }
