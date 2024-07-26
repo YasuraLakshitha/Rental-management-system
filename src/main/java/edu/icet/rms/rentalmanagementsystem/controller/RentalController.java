@@ -35,7 +35,7 @@ public class RentalController {
         return rentalService.findById(id);
     }
 
-    @GetMapping("/items")
+    @GetMapping("/rentals")
     List<Rental> findAll(){
        return rentalService.findAll();
     }
